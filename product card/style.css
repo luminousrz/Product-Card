@@ -1,0 +1,200 @@
+
+/* ---IMPORTING FONT--- */
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+/* ROOT */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo", sans-serif;
+    font-size: 17px;
+}
+
+/* ---THE MAIN BOX WRAPPER--- */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e7e7e74a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+/* ---TITLE OF BOX--- */
+.collectionText{
+    margin-bottom: 10px;
+}
+.collectionText span{
+    font-weight: 500;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-bottom: 3px;
+}
+
+/* ---PRODUCT BOX--- */
+.productCard{
+    max-width: 720px;
+    display: flex;
+    border: 1px solid black;
+    padding: 15px 15px 15px 15px;
+}
+
+/* ------------------- */
+/* ---IMAGE GALLERY--- */
+/* ------------------- */
+.product-img{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.product-img img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    width: 355px;
+    height: 407px;
+}
+.imageHandler{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+}
+.imageHandler .handler{
+    width: 12px;
+    height: 12px;
+    background-color: #d3d0d0 ;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.imageHandler .active{
+    background-color: #633f5f;
+    transition: background-color .4s;
+}
+
+/* --------------------- */
+/* ---PRODUCT DETAILS--- */
+/* --------------------- */
+.product-details{
+    display: grid;
+    row-gap: 1rem;
+    padding-left: 25px;
+    padding-right: 10px;
+    color: #535353;
+}
+form{
+    display: grid;
+    row-gap: .25rem;
+}
+
+/* ---PRODUCT PRICE--- */
+.productPrice del{
+    color: #777777;
+}
+.price-off span{
+    color: #e41f11;
+    font-size: 15px;
+}
+.productPrice .main-price{
+    display: flex;
+}
+.productPrice .main-price p{
+    margin-right: 10px;
+}
+
+/* ---PRODUCT SIZE--- */
+.productSize{
+    font-size: 18px;
+    display: flex;
+}
+.productSize p{
+    margin-right: 43px;
+    margin-top:-2px;
+}
+.productSize input:checked + span{
+    color: #e41f11;
+}
+.productSize input{
+    display: none;
+}
+.productSize span{
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+/* ---PRODUCT COLOR--- */
+.productColor{
+    display: flex;
+}
+.productColor p{
+    margin-top: -3px;
+    margin-right: 37px; 
+}
+.productColor span{
+    margin-right: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.productColor input{
+    display: none;
+}
+.productColor input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff , 0 0 0 6px #000;
+}
+.firstColor{
+    background-color: #97640b;
+}
+.secondColor{
+    background-color: #ff8800;
+}
+.thirdColor{
+    background-color: #412556;
+}
+.fourthColor{
+    background-color: #27615d;
+}
+.fifthColor{
+    background-color: #5f1641;
+}
+
+/* ---PRODUCT QUANTITY--- */
+.productQuantity{
+    display: flex;
+}
+.productQuantity p{
+    margin-right: 10px;
+    margin-top: 2px;
+}
+.productQuantity input{
+    border: 0;
+    outline: 0;
+    padding: 2px 7px 2px 15px;
+    background-color: #e9e9e9;
+    width: 50px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+/* ---BUTTON--- */
+button{
+    width: 100%;
+    border: 1px solid #e9e9e9;
+    padding: 5px 10px 5px 10px;
+    background-color: #d3d3d3;
+    letter-spacing: 3px;
+    box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.2);
+    margin-top: 20px;
+    border-radius: 20px;
+}
+button:hover{
+    transition: background-color .5s;
+    background-color: #bebebe;
+    cursor: pointer;
+}

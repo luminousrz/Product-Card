@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- TITLE OF BOX -->
+        <div class="collectionText">
+            <span>SPRING COLLECTION</span>
+        </div>
+        <div class="productCard">
+            <!-- IMAGE GALLERY BOX -->
+            <div class="product-img">
+                <img src="./images/image1.jpg" alt="image" id="imageSlider">
+                <div class="imageHandler">
+                    <span class="handler active"></span>
+                    <span class="handler"></span>
+                    <span class="handler"></span>
+                    <span class="handler"></span>
+                </div>
+            </div>
+            <!-- PRODUCT DETAILS -->
+            <div class="product-details">
+                <!-- NAME OF PRODUCT -->
+                <div class="productName">
+                    <p>wrap blouse aesthetic print</p>
+                </div>
+                
+                <!-- PRODUCT PRICE -->
+                <div class="productPrice">
+                    <div class="main-price">
+                        <p>price</p>
+                        <del>215.00</del>
+                    </div>
+                    <div class="price-off">
+                        150.00 <span>30%OFF</span>
+                    </div>
+                </div>
+
+                <!-- PRODUCT CAPTION -->
+                <div class="productCaption">
+                    Mega trendy and super fun to combine with a chic blouse or cool denim jeans.In addition, you can style this blouse with a cool chain thanks to the beautiful v-neck.
+                </div>
+
+                <!-- THE SECTION OF COLOR , SIZE AND quantity AND REGESTRING BUTTON -->
+                <form>
+                    <div class="productSize">
+                        <p>size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="Large">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="xLarge">
+                            <input type="radio" name="size" id="xLarge">
+                            <span>XL</span>
+                        </label>
+                        <label for="xxLarge">
+                            <input type="radio" name="size" id="xxLarge">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+
+                    <div class="productColor">
+                        <p>color</p>
+                        <label for="firstColor">
+                            <input type="radio" name="color" id="firstColor">
+                            <span class="firstColor"></span>
+                        </label>
+                        <label for="secondColor">
+                            <input type="radio" name="color" id="secondColor">
+                            <span class="secondColor"></span>
+                        </label>
+                        <label for="thirdColor">
+                            <input type="radio" name="color" id="thirdColor">
+                            <span class="thirdColor"></span>
+                        </label>
+                        <label for="fourthColor">
+                            <input type="radio" name="color" id="fourthColor">
+                            <span class="fourthColor"></span>
+                        </label>
+                        <label for="fifthColor">
+                            <input type="radio" name="color" id="fifthColor">
+                            <span class="fifthColor"></span>
+                        </label>
+                    </div>
+
+                    <div class="productQuantity">
+                        <p>quantity</p>
+                        <input type="number" name="number" id="number" value="1">
+                    </div>
+
+                    <div class="button">
+                        <button>BUY NOW</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
